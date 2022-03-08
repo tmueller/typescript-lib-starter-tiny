@@ -1,0 +1,24 @@
+{
+    "recommendations": [
+        "nrwl.angular-console",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "amatiasq.sort-imports",
+        "aaron-bond.better-comments",
+        "editorconfig.editorconfig",
+        "wix.vscode-import-cost",
+        "zignd.html-css-class-completion",
+        "eamodio.gitlens",
+        "christian-kohler.npm-intellisense",
+        "pflannery.vscode-versionlens",
+        "juan-ojeda-dev.fp-ts-snippets",
+        "rintoj.blank-line-organizer",
+        "dinhani.divider",
+        "sibiraj-s.vscode-scss-formatter",
+        "philnash.ngrok-for-vscode",
+        "esbenp.prettier-vscode",
+        "ms-vscode-remote.remote-containers",
+        "ms-vscode-remote.remote-ssh",
+        "ms-vscode-remote.remote-wsl"
+    ]
+}
