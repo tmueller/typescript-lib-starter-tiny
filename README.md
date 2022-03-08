@@ -1,5 +1,7 @@
 # fun-fetch
 
+[![fun-fetch build](https://github.com/jphilipps/fun-fetch/actions/workflows/project-build.yml/badge.svg)](https://github.com/jphilipps/fun-fetch/actions/workflows/project-build.yml)
+
 ## contribution guidelines
 
 ### signed commits
