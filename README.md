@@ -4,6 +4,11 @@
 
 ## contribution guidelines
 
+### 🐶 husky 
+
+Before pushing please run `npx husky install` to install git hooks for husky.
+Husky advises against an automatic setup. 
+
 ### signed commits
 
 only [signed commits](https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits) are allowed
