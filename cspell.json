@@ -3,7 +3,8 @@
     "language": "en",
     "words": [
         "eqeqeq",
-        "esbuild"
+        "esbuild",
+        "importsort"
     ],
     "flagWords": []
 }

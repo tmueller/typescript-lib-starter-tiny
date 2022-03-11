@@ -35,4 +35,4 @@ export const isNotNull = <T>(
     // eslint-disable-next-line eqeqeq
     x == null;
 
-export const noAny = <P>(p: P): NoAny<P> => p as any;
+export const noAny = <P>(p: P): NoAny<P> => p;

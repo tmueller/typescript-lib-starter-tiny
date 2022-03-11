@@ -5,6 +5,12 @@
         "name": "jphilipps",
         "url": "https://github.com/jphilipps"
     },
+    "contributors": [
+        {
+            "name": "Thomas Müller",
+            "url": "https://github.com/tmueller"
+        }
+    ],
     "license": "MIT",
     "version": "0.0.0",
     "module": "./dist/index.js",
@@ -13,14 +19,22 @@
     "type": "module",
     "sideEffects": false,
     "scripts": {
+        "- BUILD -------------------------------------------": "echo 'unused'",
         "build": "npm run clean:build && tsc -p ./tsconfig.json && node ./esbuild.config.js",
         "build:test": "tsc -p ./tsconfig.test.json",
+        "- CLEAN -------------------------------------------": "echo 'unused'",
         "clean": "npm run clean:build && rimraf ./node_modules",
         "clean:build": "rimraf ./dist-test && rimraf ./dist",
-        "check:eslint": "clear && eslint ./src/**/*.{ts,tsx}",
-        "check:cspell": "clear && cspell src/**/*.ts src/**/*.html src/**/*.less src/**/*.sass src/**/*.css",
-        "check:tsc": "clear && tsc --noEmit --emitDeclarationOnly false",
-        "check": "npm run check:eslint && npm run check:cspell && npm run check:tsc"
+        "- CHECK -------------------------------------------": "echo 'unused'",
+        "check": "npm run check:eslint && npm run check:cspell && npm run check:tsc && npm run check:importsort",
+        "check:eslint": "eslint ./src/**/*.{ts,tsx}",
+        "check:cspell": "cspell src/**/*.ts src/**/*.html src/**/*.less src/**/*.sass src/**/*.css",
+        "check:tsc": "tsc --noEmit --emitDeclarationOnly false",
+        "check:importsort": "import-sort -l ./src/**/*.{ts,tsx}",
+        "- FIX ---------------------------------------------": "echo 'unused'",
+        "fix": "npm run fix:eslint && npm run fix:importsort",
+        "fix:eslint": "eslint --fix ./src/**/*.{ts,tsx}",
+        "fix:importsort": "import-sort --write ./src/**/*.{ts,tsx}"
     },
     "dependencies": {
         "fp-ts": "2.11.8",
@@ -41,7 +55,6 @@
         "import-sort": "6.0.0",
         "import-sort-cli": "6.0.0",
         "import-sort-parser-typescript": "6.0.0",
-        "import-sort-style-react2": "0.3.6",
         "esbuild-node-externals": "1.4.1",
         "type-fest": "2.12.0"
     }
