@@ -55,5 +55,15 @@
                 "group": "check"
             },
         },
+        {
+            "label": "test rite",
+            "isBackground": true,
+            "type": "npm",
+            "script": "test:rite:watch",
+            "presentation": {
+                "group": "test"
+            },
+            "problemMatcher": []
+        },
     ]
 }
