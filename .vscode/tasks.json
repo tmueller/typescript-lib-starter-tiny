@@ -1,0 +1,59 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "check all",
+            "dependsOn": [
+                "check eslint",
+                "check cspell",
+                "check tsc"
+            ],
+            "dependsOrder": "parallel",
+            "problemMatcher": [],
+            "presentation": {
+                "group": "check"
+            },
+        },
+        {
+            "type": "npm",
+            "label": "check eslint",
+            "script": "check:eslint",
+            "problemMatcher": [
+                "$eslint-stylish"
+            ],
+            "presentation": {
+                "group": "check"
+            },
+        },
+        {
+            "type": "npm",
+            "label": "check cspell",
+            "script": "check:cspell",
+            "problemMatcher": {
+                "owner": "cSpell",
+                "severity": "info",
+                "source": "cSpell",
+                "fileLocation": "absolute",
+                "pattern": {
+                    "regexp": "^(.+?):(\\d+):(\\d+) - (.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "message": 4
+                }
+            },
+            "presentation": {
+                "group": "check"
+            },
+        },
+        {
+            "label": "check tsc",
+            "type": "npm",
+            "script": "check:tsc",
+            "problemMatcher": "$tsc",
+            "presentation": {
+                "group": "check"
+            },
+        },
+    ]
+}
