@@ -2,6 +2,44 @@
 
 [![fun-fetch build](https://github.com/jphilipps/fun-fetch/actions/workflows/project-build.yml/badge.svg)](https://github.com/jphilipps/fun-fetch/actions/workflows/project-build.yml)
 
+## development
+
+### build
+
+```
+npm run build
+```
+
+Builds the project.
+
+### tests
+
+```
+npm run test
+```
+
+Runs tests for CI. Checks for compile errors before running tests.
+
+```
+npm run test:rite:watch
+```
+
+Runs tests in watch mode for development. Does **not** check for compile errors. 
+
+### checks and fixes
+
+```
+npm run check
+```
+
+Checks eslint, spelling, compile time errors and order of imports.
+
+```
+npm run fix
+```
+
+Fixes eslint and order of imports.
+
 ## contribution guidelines
 
 ### 🐶 husky 
