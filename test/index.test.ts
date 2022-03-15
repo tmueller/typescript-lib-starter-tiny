@@ -1,1 +1,1 @@
-import "./fetch.test";
+import "./add.test";

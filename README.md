@@ -1,6 +1,6 @@
-# fun-fetch
+# <PROJECT_NAME>
 
-[![fun-fetch build](https://github.com/jphilipps/fun-fetch/actions/workflows/project-build.yml/badge.svg)](https://github.com/jphilipps/fun-fetch/actions/workflows/project-build.yml)
+<PROJECT_DESCRIPTION>
 
 ## development
 
