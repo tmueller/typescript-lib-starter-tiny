@@ -19,6 +19,8 @@
     "type": "module",
     "sideEffects": false,
     "scripts": {
+        "- SETUP -------------------------------------------": "echo 'unused'",
+        "use:git-commit-message": "git config commit.template commit-message-template",
         "- TEST --------------------------------------------": "echo 'unused'",
         "test": "npm run -s check:tsc && npm run -s test:rite",
         "test:rite": "esbuild-dev --cjs test/index.test.ts",
